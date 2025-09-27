@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'features/challenges/presentation/challenges_screen.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    home: ChallengesScreen(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
