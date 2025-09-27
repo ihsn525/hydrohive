@@ -15,7 +15,7 @@ class BottomNavBar extends StatelessWidget {
       onTap: (index) {
         // Implement navigation logic here
         // Example:
-        // if (index == 0) Navigator.pushNamed(context, '/hub');
+        // if (index == 2) Navigator.pushNamed(context, '/wallet');
       },
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Hub'),
