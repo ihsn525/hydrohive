@@ -18,9 +18,9 @@ final ThemeData appTheme = ThemeData(
     secondary: AppColors.card,
   ),
   textTheme: const TextTheme(
-    headline6: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
-    bodyText2: TextStyle(fontSize: 16, color: AppColors.textPrimary),
-    subtitle1: TextStyle(fontSize: 14, color: AppColors.textSecondary),
+    titleLarge: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+    bodyMedium: TextStyle(fontSize: 16, color: AppColors.textPrimary),
+    titleMedium: TextStyle(fontSize: 14, color: AppColors.textSecondary),
   ),
   fontFamily: 'Poppins', // Or your chosen font
 );

@@ -31,8 +31,6 @@ class HubScreen extends StatelessWidget {
           EventCard(title: 'Live Welding Boss Battle', time: 'Today at 3:00 PM', players: 25, isLive: true, xp: 500),
         ],
       ),
-      bottomNavigationBar: const BottomNavBar(selectedTab: 0),
-      floatingActionButton: FloatingActionButton(onPressed: () {}),
     );
   }
 }

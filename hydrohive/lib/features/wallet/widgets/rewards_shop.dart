@@ -22,7 +22,7 @@ class RewardsShop extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Rewards Shop', style: Theme.of(context).textTheme.headline6),
+            Text('Rewards Shop', style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 12),
             ...rewards.map((reward) => ListTile(
               leading: Icon(reward.icon, color: Colors.orange, size: 40),

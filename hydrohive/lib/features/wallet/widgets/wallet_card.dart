@@ -24,7 +24,7 @@ class WalletCard extends StatelessWidget {
               children: [
                 Icon(Icons.account_balance_wallet, size: 32, color: Colors.white),
                 const SizedBox(width: 10),
-                Text('HydroCoins Wallet', style: Theme.of(context).textTheme.headline6?.copyWith(color: Colors.white, fontWeight: FontWeight.bold)),
+                Text('HydroCoins Wallet', style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.white, fontWeight: FontWeight.bold)),
               ],
             ),
             const SizedBox(height: 10),

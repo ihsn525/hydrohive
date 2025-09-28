@@ -22,7 +22,7 @@ class EarningTipsCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Earn More HydroCoins', style: Theme.of(context).textTheme.headline6),
+            Text('Earn More HydroCoins', style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 12),
             ...tips.map((tip) => ListTile(
               leading: Icon(tip.icon, color: Colors.orange),

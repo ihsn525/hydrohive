@@ -23,7 +23,7 @@ class TransactionsList extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Recent Transactions', style: Theme.of(context).textTheme.headline6),
+            Text('Recent Transactions', style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 12),
             ...transactions.map((tx) => ListTile(
               leading: Icon(

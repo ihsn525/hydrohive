@@ -27,9 +27,20 @@ class WalletScreen extends StatelessWidget {
             const SizedBox(height: 20),
             WalletCard(balance: 4850, lifetimeEarned: 12750),
             const SizedBox(height: 20),
-            TransactionsList(transactions: [ /* ...transaction data... */ ]),
+            TransactionsList(transactions: [
+  TransactionItem('Water Challenge', 'Earned', 200, 'Sep 27, 2025'),
+  TransactionItem('Skill Quest', 'Earned', 150, 'Sep 26, 2025'),
+  TransactionItem('Amazon Voucher', 'Spent', 500, 'Sep 25, 2025'),
+  TransactionItem('Flipkart Voucher', 'Spent', 300, 'Sep 24, 2025'),
+  TransactionItem('Daily Login', 'Earned', 50, 'Sep 24, 2025'),
+]),
+
             const SizedBox(height: 20),
-            CredentialsList(certificates: [ /* ...certificate data... */ ]),
+            CredentialsList(certificates: [
+              CertificateItem('Water Conservation Pro', 'HydroHive', 'Sep 20, 2025'),
+              CertificateItem('Solar Panel Basics', 'HydroHive', 'Sep 15, 2025'),
+              CertificateItem('Mobile Repair', 'HydroHive', 'Sep 10, 2025'),
+            ]),
             const SizedBox(height: 20),
             EarningTipsCard(tips: [
               Tip('Complete Water Challenges', 'Report water problems...', Icons.water_drop),
@@ -41,8 +52,6 @@ class WalletScreen extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: const BottomNavBar(selectedTab: 2),
-      floatingActionButton: FloatingActionButton(onPressed: () {}),
     );
   }
 }

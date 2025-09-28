@@ -22,7 +22,7 @@ class CredentialsList extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Digital Credentials', style: Theme.of(context).textTheme.headline6),
+            Text('Digital Credentials', style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 12),
             ...certificates.map((cert) => ListTile(
               leading: Icon(Icons.verified, color: Colors.blueAccent),

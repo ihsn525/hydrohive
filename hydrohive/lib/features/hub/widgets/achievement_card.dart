@@ -29,7 +29,7 @@ class AchievementCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('Achievement Unlocked!',
-                style: Theme.of(context).textTheme.headline6),
+                style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 8),
             Text('You earned $xp XP',
                 style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.bold)),
