@@ -7,14 +7,7 @@ class XPBar extends StatelessWidget {
   final int winStreak;
   final int xpProgress;
   final int xpToNextLevel;
-  const XPBar({
-    super.key,
-    required this.xp,
-    required this.level,
-    required this.winStreak,
-    required this.xpProgress,
-    required this.xpToNextLevel,
-  });
+  const XPBar({super.key, required this.xp, required this.level, required this.winStreak, required this.xpProgress, required this.xpToNextLevel});
 
   @override
   Widget build(BuildContext context) {

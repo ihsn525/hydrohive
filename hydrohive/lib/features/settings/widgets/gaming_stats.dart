@@ -6,7 +6,11 @@ class GamingStats extends StatelessWidget {
   final int questsCompleted;
   final int totalXP;
   const GamingStats({
-    super.key, required this.hoursPlayed, required this.questsCompleted, required this.totalXP });
+    super.key,
+    required this.hoursPlayed,
+    required this.questsCompleted,
+    required this.totalXP
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,22 +21,22 @@ class GamingStats extends StatelessWidget {
       child: Column(
         children: [
           Row(children: [
-            Icon(Icons.bar_chart, color: Colors.orangeAccent),
+            const Icon(Icons.bar_chart, color: Colors.orangeAccent),
             const SizedBox(width: 8),
-            Text('Gaming Stats', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+            const Text('Conservation Stats', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
           ]),
           const SizedBox(height: 10),
           Row(
             children: [
               Expanded(child: _StatBox(
                 value: hoursPlayed.toString(),
-                label: 'Hours Played',
+                label: 'Hours Logged',
                 color: Colors.greenAccent,
                 icon: Icons.timer,
               )),
               Expanded(child: _StatBox(
                 value: questsCompleted.toString(),
-                label: 'Quests Completed',
+                label: 'Missions Done',
                 color: Colors.blueAccent,
                 icon: Icons.task_alt,
                 subtitle: '+$totalXP Total XP',
@@ -68,9 +72,8 @@ class _StatBox extends StatelessWidget {
         children: [
           Icon(icon, color: color, size: 20),
           const SizedBox(height: 3),
-          Text(value, style: TextStyle(
-            color: color, fontSize: 28, fontWeight: FontWeight.bold)),
-          Text(label, style: TextStyle(color: Colors.white)),
+          Text(value, style: TextStyle(color: color, fontSize: 28, fontWeight: FontWeight.bold)),
+          Text(label, style: const TextStyle(color: Colors.white)),
           if (subtitle != null)
             Padding(
               padding: const EdgeInsets.only(top: 4),

@@ -27,12 +27,12 @@ class TrophyCollection extends StatelessWidget {
             Row(children: [
               Icon(Icons.emoji_events, color: Colors.yellow.shade700),
               const SizedBox(width: 8),
-              Text('Trophy Collection', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              const Text('Trophy Collection', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
               const SizedBox(width: 8),
               Icon(Icons.star, size: 17, color: Colors.yellow.shade600),
             ]),
             const SizedBox(height: 6),
-            Text('Your legendary achievements and unlocks!', style: TextStyle(color: Colors.yellowAccent, fontSize: 13)),
+            const Text('Your legendary water-saving achievements!', style: TextStyle(color: Colors.yellowAccent, fontSize: 13)),
             const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -50,9 +50,9 @@ class TrophyCollection extends StatelessWidget {
                       const SizedBox(height: 6),
                       Text(t.name, style: TextStyle(color: t.unlocked ? Colors.white : Colors.black54)),
                       const SizedBox(height: 3),
-                      Text('${t.xp} XP', style: TextStyle(fontSize: 13, color: Colors.white, fontWeight: FontWeight.bold)),
+                      Text('${t.xp} XP', style: const TextStyle(fontSize: 13, color: Colors.white, fontWeight: FontWeight.bold)),
                       if (t.unlocked)
-                        Icon(Icons.check_circle, color: Colors.green, size: 18),
+                        const Icon(Icons.check_circle, color: Colors.green, size: 18),
                     ],
                   ),
                 ),

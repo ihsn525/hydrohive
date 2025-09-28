@@ -24,10 +24,10 @@ class BottomNavBar extends StatelessWidget {
             Navigator.pushReplacementNamed(context, '/wallet');
             break;
           case 3:
-            Navigator.pushReplacementNamed(context, '/reports');
+            Navigator.pushReplacementNamed(context, '/challenges');
             break;
           case 4:
-            Navigator.pushReplacementNamed(context, '/player');
+            Navigator.pushReplacementNamed(context, '/settings');
             break;
         }
       },
@@ -35,8 +35,8 @@ class BottomNavBar extends StatelessWidget {
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Hub'),
         BottomNavigationBarItem(icon: Icon(Icons.water_drop), label: 'Missions'),
         BottomNavigationBarItem(icon: Icon(Icons.wallet), label: 'Wallet'),
-        BottomNavigationBarItem(icon: Icon(Icons.report), label: 'Reports'),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Player'),
+        BottomNavigationBarItem(icon: Icon(Icons.flag), label: 'Challenges'),
+        BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
       ],
     );
   }

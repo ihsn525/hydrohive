@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'features/hub/presentation/hub_screen.dart';
 import 'features/wallet/presentation/wallet_screen.dart';
 import 'features/settings/presentation/settings_screen.dart';
+import 'features/challenges/presentation/challenges_screen.dart';
 import 'common/theme.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,10 +31,10 @@ class AppRoot extends StatefulWidget {
 class _AppRootState extends State<AppRoot> {
   int currentIndex = 0;
   static final List<Widget> pages = [
-    HubScreen(),       // index 0
-    WalletScreen(),    // index 1
-    Placeholder(),     // index 2 (Challenges: add if needed)
-    SettingsScreen(),    // index 3
+    const HubScreen(),
+    const WalletScreen(),
+    const ChallengesScreen(),
+    const SettingsScreen(),
   ];
 
   @override

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../common/custom_button.dart';
 
 class ReportActionCard extends StatelessWidget {
   const ReportActionCard({super.key});
@@ -36,10 +35,6 @@ class ReportActionCard extends StatelessWidget {
             style: TextStyle(color: Colors.greenAccent, fontSize: 14),
           ),
           const SizedBox(height: 12),
-          CustomButton(
-            text: '📸 Report New Water Challenge (+250 XP)',
-            onPressed: () {},
-          ),
           const SizedBox(height: 8),
           const Text(
             'Use camera to document • GPS auto-location • Instant community alerts',

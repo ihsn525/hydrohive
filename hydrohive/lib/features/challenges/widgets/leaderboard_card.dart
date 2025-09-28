@@ -9,6 +9,8 @@ class LeaderboardCard extends StatelessWidget {
   final int successRate;
   final bool isCurrentUser;
 
+  static const Color bronze = Color(0xFFCD7F32); // Bronze color
+
   const LeaderboardCard({
     super.key,
     required this.rank,
@@ -22,13 +24,15 @@ class LeaderboardCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final rankColor = rank == 1
+    final Color rankColor = rank == 1
         ? Colors.orangeAccent
         : rank == 2
-        ? Colors.grey
-        : Colors.bronze;
+            ? Colors.grey
+            : rank == 3
+                ? bronze
+                : Colors.blueGrey;
 
-    final bgColor = isCurrentUser ? Colors.blueGrey[700] : Colors.blueGrey[900];
+    final Color bgColor = isCurrentUser ? Colors.blueGrey[700]! : Colors.blueGrey[900]!;
 
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 6),
@@ -59,7 +63,7 @@ class LeaderboardCard extends StatelessWidget {
               color: rankColor,
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(Icons.emoji_events, color: Colors.white),
+            child: const Icon(Icons.emoji_events, color: Colors.white),
           ),
         ],
       ),

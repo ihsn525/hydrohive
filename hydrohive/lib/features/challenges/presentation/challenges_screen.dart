@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../widgets/issue_card.dart';
 import '../widgets/leaderboard_card.dart';
 import '../widgets/report_action_card.dart';
-import '../widgets/bottom_nav_bar.dart';
 import '../../../common/theme.dart';
 
 class ChallengesScreen extends StatelessWidget {
@@ -11,8 +10,7 @@ class ChallengesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.bgColor,
-      bottomNavigationBar: const BottomNavBar(),
+      backgroundColor: AppColors.background,
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
@@ -103,15 +101,16 @@ class ChallengesScreen extends StatelessWidget {
       children: [
         Text(
           'HydroHive',
-          style: AppTheme.titleStyle.copyWith(
+          style: const TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.bold,
+            color: Colors.orangeAccent,
           ),
         ),
         const SizedBox(height: 4),
         Text(
           'Game • Level Up • Win 🎮',
-          style: AppTheme.descStyle.copyWith(fontSize: 14, color: Colors.grey),
+          style: TextStyle(fontSize: 14, color: Colors.grey[400]),
         ),
         const SizedBox(height: 14),
         LinearProgressIndicator(
@@ -204,7 +203,7 @@ class ChallengesScreen extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: Row(
         children: const [
-          Icon(Icons.warning_amber_outlined, size: 40, color: Colors.redAccent),
+          Icon(Icons.warning_amber_outlined, size: 40, color: Color.fromARGB(255, 255, 255, 255)),
           SizedBox(width: 16),
           Expanded(
             child: Column(
@@ -215,13 +214,13 @@ class ChallengesScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
-                    color: Colors.redAccent,
+                    color: Color.fromARGB(255, 255, 255, 255),
                   ),
                 ),
                 SizedBox(height: 6),
                 Text(
                   'High priority problems that need immediate attention!',
-                  style: TextStyle(color: Colors.redAccent),
+                  style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
                 ),
               ],
             ),

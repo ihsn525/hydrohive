@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "E:/Academics/Programming/Flutter/Projects/HydroHive/hydrohive/windows"
+    "cmake.sourceDirectory": "E:/Academics/Programming/Flutter/Projects/HydroHive/hydrohive/windows",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

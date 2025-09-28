@@ -1,5 +1,6 @@
+// ignore_for_file: deprecated_member_use, unnecessary_string_interpolations
+
 import 'package:flutter/material.dart';
-import '../../common/custom_button.dart';
 
 class IssueCard extends StatelessWidget {
   final String title;
@@ -41,7 +42,17 @@ class IssueCard extends StatelessWidget {
           _buildIcon(actionColor),
           const SizedBox(width: 12),
           Expanded(child: _buildInfoSection()),
-          CustomButton(text: actionText, onPressed: () {}, width: 120),
+          ElevatedButton.icon(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: actionColor,
+              foregroundColor: Colors.white,
+              minimumSize: const Size(120, 40),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+            ),
+            icon: Icon(actionIcon, size: 18),
+            label: Text(actionText),
+            onPressed: () {},
+          ),
         ],
       ),
     );

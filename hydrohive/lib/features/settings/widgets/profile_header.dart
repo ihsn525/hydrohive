@@ -27,18 +27,18 @@ class ProfileHeader extends StatelessWidget {
             CircleAvatar(
               backgroundColor: Colors.white,
               radius: 36,
-              child: Icon(Icons.videogame_asset, size: 38, color: Colors.orange),
+              child: Icon(Icons.water_drop, size: 38, color: Colors.orange),
             ),
             const SizedBox(height: 8),
-            Text(username, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white)),
-            Text('Elite Gamer • Level $level', style: TextStyle(color: Colors.white)),
+            Text(username, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white)),
+            Text('Water Steward • Level $level', style: const TextStyle(color: Colors.white)),
             const SizedBox(height: 18),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 _MiniStat(value: badges.toString(), label: 'Badges', icon: Icons.emoji_events_outlined),
                 _MiniStat(value: trophies.toString(), label: 'Trophies', icon: Icons.workspace_premium),
-                _MiniStat(value: '${(winrate * 100).toInt()}%', label: 'Win Rate', icon: Icons.insights),
+                _MiniStat(value: '${(winrate * 100).toInt()}%', label: 'Success Rate', icon: Icons.insights),
               ],
             ),
           ],
@@ -60,8 +60,8 @@ class _MiniStat extends StatelessWidget {
       children: [
         Icon(icon, color: Colors.white, size: 24),
         const SizedBox(height: 3),
-        Text(value, style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
-        Text(label, style: TextStyle(color: Colors.white)),
+        Text(value, style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
+        Text(label, style: const TextStyle(color: Colors.white)),
       ],
     );
   }

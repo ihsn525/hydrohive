@@ -27,12 +27,12 @@ class WinStreakCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                Text('Current Win Streak', style: TextStyle(color: Colors.redAccent)),
+                Text('Current Conservation Streak', style: TextStyle(color: Colors.redAccent)),
                 SizedBox(width: 4),
                 Icon(Icons.local_fire_department, color: Colors.orange),
               ],
             ),
-            Text('Streak Bonus: +$streakXP XP/day', style: TextStyle(color: Colors.amber.shade300, fontSize: 13)),
+            Text('Streak Bonus: +$streakXP XP/day', style: TextStyle(color: Colors.amber, fontSize: 13)),
           ],
         ),
       ),

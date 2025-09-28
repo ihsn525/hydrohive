@@ -13,15 +13,29 @@ class BottomNavBar extends StatelessWidget {
       unselectedItemColor: Colors.white70,
       currentIndex: selectedTab,
       onTap: (index) {
-        // Implement navigation logic here
-        // Example:
-        if (index == 2) Navigator.pushNamed(context, '/wallet');
+        switch (index) {
+          case 0:
+            Navigator.pushReplacementNamed(context, '/hub');
+            break;
+          case 1:
+            Navigator.pushReplacementNamed(context, '/missions');
+            break;
+          case 2:
+            Navigator.pushReplacementNamed(context, '/wallet');
+            break;
+          case 3:
+            Navigator.pushReplacementNamed(context, '/reports');
+            break;
+          case 4:
+            Navigator.pushReplacementNamed(context, '/player');
+            break;
+        }
       },
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Hub'),
-        BottomNavigationBarItem(icon: Icon(Icons.flag), label: 'Quests'),
+        BottomNavigationBarItem(icon: Icon(Icons.water_drop), label: 'Missions'),
         BottomNavigationBarItem(icon: Icon(Icons.wallet), label: 'Wallet'),
-        BottomNavigationBarItem(icon: Icon(Icons.emoji_events), label: 'Challenges'),
+        BottomNavigationBarItem(icon: Icon(Icons.report), label: 'Reports'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Player'),
       ],
       type: BottomNavigationBarType.fixed,

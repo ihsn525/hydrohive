@@ -17,8 +17,9 @@ class SettingsScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.background,
         elevation: 0,
-        title: const Text('HydroHive'),
-        actions: [Icon(Icons.person)],
+        centerTitle: true,
+        title: const Text('HydroHive', style: TextStyle(color: Colors.orangeAccent, fontWeight: FontWeight.bold)),
+        actions: [Icon(Icons.person, color: Colors.orangeAccent)],
       ),
       body: ListView(
         padding: const EdgeInsets.all(20),

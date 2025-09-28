@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726617905161",
+    "project_id": "hydrohive-app",
+    "storage_bucket": "hydrohive-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726617905161:android:d3ef89d46a90a8ba7580d8",
+        "android_client_info": {
+          "package_name": "com.example.hydrohive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKKj7Qttdz_8sgW0TggfEI8ICm9U4c2EE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
-
 import '../widgets/quest_lines.dart';
 import '../widgets/hot_challenges.dart';
 import '../widgets/recommended.dart';
-import '../widgets/bottom_nav_bar.dart';
 
 class QuestScreen extends StatefulWidget {
   const QuestScreen({super.key});
-
   @override
   State<QuestScreen> createState() => _QuestScreenState();
 }
 
 class _QuestScreenState extends State<QuestScreen> {
   int selectedTabIndex = 0;
-
   late final List<Widget> tabs;
 
   @override
@@ -30,7 +26,6 @@ class _QuestScreenState extends State<QuestScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // You can implement a progress bar or header here
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8),
               child: Row(
@@ -46,7 +41,23 @@ class _QuestScreenState extends State<QuestScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavBar(selectedIndex: 1),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: const Color(0xFF233244),
+        selectedItemColor: Colors.orangeAccent,
+        unselectedItemColor: Colors.white70,
+        currentIndex: 1, // Missions tab
+        type: BottomNavigationBarType.fixed,
+        onTap: (index) {
+          // You can add navigation logic here if you want to switch screens
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Hub'),
+          BottomNavigationBarItem(icon: Icon(Icons.water_drop), label: 'Missions'),
+          BottomNavigationBarItem(icon: Icon(Icons.wallet), label: 'Wallet'),
+          BottomNavigationBarItem(icon: Icon(Icons.flag), label: 'Challenges'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        ],
+      ),
     );
   }
 

@@ -9,7 +9,7 @@ class HotChallengesTab extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       children: [
         const Text(
-          '🔥 Hot Challenges This Week 📈',
+          '🔥 Hot Water-Saving Challenges This Week 📈',
           style: TextStyle(
             color: Colors.redAccent,
             fontWeight: FontWeight.bold,
@@ -18,7 +18,7 @@ class HotChallengesTab extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         const Text(
-          'Most popular skill battles right now!',
+          'Most popular water conservation missions right now!',
           style: TextStyle(
             color: Colors.redAccent,
             fontWeight: FontWeight.w500,
@@ -28,19 +28,19 @@ class HotChallengesTab extends StatelessWidget {
         _challengeCard(
           context,
           '#1',
-          'Solar Panel Installation Mastery',
-          'Intermediate',
-          579,
-          850,
+          'Neighborhood Leak Reporting',
+          'Beginner',
+          420,
+          100,
         ),
         const SizedBox(height: 10),
         _challengeCard(
           context,
           '#2',
-          'Welding Fundamentals',
-          'Beginner',
-          292,
-          600,
+          'Greywater Reuse Mission',
+          'Intermediate',
+          210,
+          250,
         ),
       ],
     );
@@ -87,7 +87,7 @@ class HotChallengesTab extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    '+$playersJoined players joined',
+                    '+$playersJoined participants',
                     style: const TextStyle(
                       color: Colors.white70,
                       fontWeight: FontWeight.bold,

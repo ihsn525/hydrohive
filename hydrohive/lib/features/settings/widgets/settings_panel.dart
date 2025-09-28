@@ -16,9 +16,9 @@ class SettingsPanel extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(children: [
-              Icon(Icons.settings, color: Colors.orange),
+              const Icon(Icons.settings, color: Colors.orange),
               const SizedBox(width: 8),
-              Text('Game Settings', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+              const Text('App Settings', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
               const SizedBox(width: 4),
               Icon(Icons.psychology, size: 18, color: Colors.purpleAccent),
             ]),
@@ -26,7 +26,7 @@ class SettingsPanel extends StatelessWidget {
             _SettingsButton(icon: Icons.notifications, label: 'Notification Settings', color: Colors.orangeAccent),
             _SettingsButton(icon: Icons.language, label: 'Language & Region', color: Colors.blueAccent),
             _SettingsButton(icon: Icons.lock, label: 'Privacy & Security', color: Colors.redAccent),
-            _SettingsButton(icon: Icons.save_alt, label: 'Export Game Data', color: Colors.amberAccent),
+            _SettingsButton(icon: Icons.save_alt, label: 'Export App Data', color: Colors.amberAccent),
           ],
         ),
       ),

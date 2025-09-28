@@ -4,11 +4,7 @@ import '../../../common/theme.dart';
 class WalletCard extends StatelessWidget {
   final int balance;
   final int lifetimeEarned;
-  const WalletCard({
-    super.key,
-    required this.balance,
-    required this.lifetimeEarned,
-  });
+  const WalletCard({super.key, required this.balance, required this.lifetimeEarned});
 
   @override
   Widget build(BuildContext context) {
@@ -37,13 +33,13 @@ class WalletCard extends StatelessWidget {
                   children: [
                     Text('$balance', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
                     Text('Current Balance', style: TextStyle(color: Colors.white)),
-                  ]
+                  ],
                 ),
                 Column(
                   children: [
                     Text('$lifetimeEarned', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
                     Text('Lifetime Earned', style: TextStyle(color: Colors.white)),
-                  ]
+                  ],
                 ),
               ],
             ),
